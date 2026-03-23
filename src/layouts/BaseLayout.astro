@@ -1,0 +1,65 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+
+  <body class="min-h-screen bg-[var(--color-obsidian)] text-white">
+    
+    <!-- Background glow -->
+    <div class="fixed inset-0 -z-10 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-b from-black via-[var(--color-obsidian)] to-black"></div>
+      <div class="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top,rgba(184,122,42,0.18),transparent_60%)]"></div>
+    </div>
+
+    <header class="sticky top-0 backdrop-blur bg-black/40 border-b border-[var(--color-raukhar-700)]">
+      <nav class="max-w-6xl mx-auto flex justify-between items-center px-5 py-4">
+        <a href="/" class="font-semibold tracking-wider hover:text-[var(--color-raukhar-400)] transition">
+          Robin Fechner
+        </a>
+
+        <div class="flex gap-6 text-sm text-gray-300">
+          <a href="/" class="hover:text-[var(--color-raukhar-400)] transition">Home</a>
+          <a href="/hardfacts" class="hover:text-[var(--color-raukhar-400)] transition">Hardfacts</a>
+          <a href="/projects" class="hover:text-[var(--color-raukhar-400)] transition">Projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-5 py-12">
+      <slot />
+    </main>
+
+<footer class="border-t border-[var(--color-raukhar-700)] mt-14">
+  <div class="max-w-6xl mx-auto px-5 py-6 text-sm text-gray-400 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+
+    <div>
+      © {new Date().getFullYear()} · Robin Fechner
+    </div>
+
+    <div class="flex gap-6">
+      <a href="/impressum" class="hover:text-[var(--color-raukhar-400)] transition">
+        Impressum
+      </a>
+
+      <a href="/datenschutz" class="hover:text-[var(--color-raukhar-400)] transition">
+        Datenschutz
+      </a>
+
+      <a href="mailto:DEINE_MAIL" class="hover:text-[var(--color-raukhar-400)] transition">
+        Kontakt
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  </body>
+</html>

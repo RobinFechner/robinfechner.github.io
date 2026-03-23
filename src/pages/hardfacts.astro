@@ -1,0 +1,98 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Hardfacts · Robin Fechner">
+  <h1 class="text-4xl font-bold mb-8">Hardfacts</h1>
+
+  <section class="grid md:grid-cols-3 gap-8">
+    <div class="md:col-span-2 rounded-2xl border border-raukhar-700/60 bg-surface/70 p-6">
+      <h2 class="text-xl font-semibold mb-3">Kurzprofil</h2>
+      <p class="text-gray-300">
+        Angehender Fachinformatiker für Anwendungsentwicklung mit Fokus auf Java, Python und SQL. Ich arbeite gern an praxisnahen Projekten,
+        lege Wert auf saubere Strukturen und entwickle meine Fähigkeiten Schritt für Schritt durch eigene Anwendungen weiter.
+        <br />
+        <br />
+        Ich lerne besonders gut, wenn ich Konzepte direkt in eigenen Projekten umsetze und dabei
+        Struktur, Lesbarkeit und Erweiterbarkeit mitdenke. Neben dem Programmieren beschäftige ich
+        mich auch mit Datenbanken, Deployment und dem sauberen Aufbau kleiner Webanwendungen.
+      </p>
+    </div>
+
+    <div class="rounded-2xl border border-raukhar-700/60 bg-surface/70 p-6">
+      <h2 class="text-xl font-semibold mb-3">Kontakt</h2>
+      <a class="text-raukhar-400 hover:underline" href="mailto:Robin.fech@googlemail.com">
+        Robin.fech@googlemail.com
+      </a>
+
+      <div class="mt-6 flex flex-col gap-3">
+        <a
+          href="/Lebenslauf_Robin_Fechner.pdf"
+          class="inline-flex items-center justify-center w-full px-5 py-3 bg-raukhar-600 hover:bg-raukhar-700 transition rounded-xl"
+        >
+          Lebenslauf (PDF)
+        </a>
+        <a
+            href="https://www.credly.com/badges/1c9cff49-5b47-4c9a-93f4-49ba4ae72e40/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center w-full px-5 py-3 border border-raukhar-600 hover:bg-raukhar-800/40 transition rounded-xl"
+          >
+            Python-Zertifikat (PCEP)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-10 rounded-2xl border border-raukhar-700/60 bg-surface/70 p-6">
+    <h2 class="text-xl font-semibold mb-4">Skills (grobe Übersicht)</h2>
+
+    <div class="grid md:grid-cols-6 gap-6 text-sm">
+      <div>
+        <div class="text-gray-400 mb-2">Backend</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>Java</li>
+          <li>OOP-Grundlagen</li>
+          <li>Designpatterns</li>  
+        </ul>
+      </div>
+            <div>
+        <div class="text-gray-400 mb-2">Frontend</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>Astro-Grundlagen</li>
+          <li>Vue-Grundlagen</li>
+          <li>Javascript-Grundlagen</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-400 mb-2">Database</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>MySQL</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-400 mb-2">Tools</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>Git</li>
+          <li>Linux(Debian)</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-400 mb-2">Deployment</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>GitHub Pages</li>
+          <li>Server-Deployment</li>
+        </ul>
+      </div>
+      <div>
+        <div class="text-gray-400 mb-2">Aktuell in Arbeit</div>
+        <ul class="space-y-1 text-gray-200">
+          <li>Save-Sytem</li>
+          <li>Inventory & Quests</li>
+          <li>Story-Content</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

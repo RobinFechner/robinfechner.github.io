@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { projects } from "../data/projects";
+---
+
+<BaseLayout title="Projects // Robin Fechner">
+  <h1 class="text-4xl font-bold mb-4">Projects</h1>
+  <p class="text-gray-300 mb-10">
+    Aktuell steht Varneth im Fokus. Getrennt nach <span class="text-raukhar-400">Code</span> und 
+    <span class="text-raukhar-400">Demo</span>.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    {projects.map((p) => (
+      <article class="rounded-2xl border border-raukhar-700/60 bg-surface/70 p-6 hover:border-raukhar-400/80 transition">
+        <h2 class="text-2xl font-semibold">{p.title}</h2>
+        <p class="mt-3 text-gray-300">{p.description}</p>
+
+        <div class="mt-5 flex flex-wrap gap-2">
+          {p.tags.map((t) => (
+            <span class="text-xs px-3 py-1 rounded-full border border-raukhar-700/60 text-gray-200">
+              {t}
+            </span>
+          ))}
+        </div>
+
+        <div class="mt-7">
+          <a class="text-raukhar-400 hover:underline" href={p.href} target="_blank">
+            {p.linkLabel} →
+          </a>
+        </div>
+      </article>
+    ))}
+  </div>
+</BaseLayout>

@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Cinematic Raukhar Theme */
+@theme {
+  --color-obsidian: #0e0e0f;
+  --color-surface: #161618;
+
+  --color-raukhar-400: #B87A2A;
+  --color-raukhar-600: #8B5A2B;
+  --color-raukhar-700: #7A4F1D;
+}
