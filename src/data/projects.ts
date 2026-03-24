@@ -19,9 +19,9 @@ export const projects: Project[] = [
   },
   {
     id: "varneth-demo",
-    title: "Varneth Spiel-Demo als Webapp",
+    title: "Varneth Spiel-Demo",
     description:
-      "",
+      "Eine spielbare Demo des Textadventures.",
     tags: ["Demo", "Vue", "Frontend"],
     href: "https://varneth.quest",
     linkLabel: "Demo spielen",
