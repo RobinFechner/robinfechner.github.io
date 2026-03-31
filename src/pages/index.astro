@@ -4,26 +4,37 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 <BaseLayout title="Portfolio // Robin Fechner">
   <section class="py-20">
-
     <h1 class="text-5xl md:text-6xl font-bold">
       Robin Fechner
     </h1>
 
-    <p class="mt-6 text-gray-400 max-w-2xl">
-      Portfolio eines angehenden Fachinformatikers für Anwendungsentwicklung - mit Projekten rund um Java, Python, Datenbanken und Webentwicklung.
+    <p class="mt-6 text-gray-300 max-w-3xl text-lg leading-relaxed">
+      Angehender Fachinformatiker für Anwendungsentwicklung im Rahmen einer Umschulung.
+      Ich entwickle praxisnahe Projekte mit <span class="text-raukhar-400">Java</span>,
+      <span class="text-raukhar-400">Python</span>,
+      <span class="text-raukhar-400">SQL</span> und Webtechnologien und lege dabei Wert auf
+      saubere Strukturen, nachvollziehbaren Code und stetige Weiterentwicklung.
     </p>
 
-    <div class="mt-10 flex gap-6">
-      <a href="/profile"
-         class="px-6 py-3 border border-[var(--color-raukhar-600)] rounded-xl hover:text-[var(--color-raukhar-400)] transition">
-         Profil
+    <p class="mt-4 text-gray-400 max-w-3xl leading-relaxed">
+      Aktuell suche ich ein Praktikum, in dem ich mein Wissen in realen Projekten vertiefen,
+      moderne Entwicklungsprozesse kennenlernen und mich fachlich weiterentwickeln kann.
+    </p>
+
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a
+        href="/profile"
+        class="px-6 py-3 border border-[var(--color-raukhar-600)] rounded-xl hover:text-[var(--color-raukhar-400)] transition"
+      >
+        Profil
       </a>
 
-      <a href="/projects"
-         class="px-6 py-3 rounded-xl bg-[var(--color-raukhar-600)] hover:bg-[var(--color-raukhar-700)] transition">
-         Projekte
+      <a
+        href="/projects"
+        class="px-6 py-3 rounded-xl bg-[var(--color-raukhar-600)] hover:bg-[var(--color-raukhar-700)] transition"
+      >
+        Projekte
       </a>
     </div>
-
   </section>
 </BaseLayout>

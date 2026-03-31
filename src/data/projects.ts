@@ -12,8 +12,8 @@ export const projects: Project[] = [
     id: "varneth-code",
     title: "Varneth Code",
     description:
-      "Textadventure QuellCode",
-    tags: ["Java", "OOP", "Backend"],
+      "Modulares Textadventure-/RPG-Projekt in Java mit Fokus auf OOP, Zustandsverwaltung und sauberer Architektur. Bereits umgesetzt sind unter anderem getrennte Spielphasen, Dialoglogik, Welt- und Raumstruktur sowie erste Skill- und Kampfsysteme.",
+    tags: ["Java", "OOP", "Architektur", "Backend"],
     href: "https://github.com/Sloth-blip/textadventure-varneth",
     linkLabel: "GitHub öffnen",
   },
@@ -21,8 +21,8 @@ export const projects: Project[] = [
     id: "varneth-demo",
     title: "Varneth Spiel-Demo",
     description:
-      "Eine spielbare Demo des Textadventures.",
-    tags: ["Demo", "Vue", "Frontend"],
+      "Browserbasierte Demo des Projekts mit eigener Oberfläche. Sie zeigt, wie die Spielidee nicht nur im Code, sondern auch als interaktive Anwendung mit Frontend und Serveranbindung weitergedacht wird.",
+    tags: ["Demo", "Vue", "Frontend", "Web"],
     href: "https://varneth.quest",
     linkLabel: "Demo spielen",
   },
